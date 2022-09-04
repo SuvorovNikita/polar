@@ -59,7 +59,10 @@ const Header = () => {
             </div>
             <div className="c-header__language-select">
               <div className="c-header__lang">
-                <Link to="/" className="c-header__link-lang">
+                <Link
+                  to="/"
+                  className="c-header__link-lang c-header__link-lang--active"
+                >
                   FI
                 </Link>
               </div>

@@ -1,4 +1,6 @@
 import React from "react"
+import photo from "../../assets/img/photo/image-1.png"
+import iconEmail from "../../assets/img/icon/email.svg"
 
 const Content = () => {
   return (
@@ -7,7 +9,7 @@ const Content = () => {
         <div className="container">
           <div className="c-section__inner">
             <div className="row">
-              <div className="col-6">
+              <div className="col-lg-6">
                 <h1 className="c-section__title">
                   Доставляем грузы по всему ЕС в любую точку
                 </h1>
@@ -22,14 +24,29 @@ const Content = () => {
                   размеров и сортов.
                 </h2>
               </div>
-              <div className="col-6">
-                <div className="section__contact">
-                  <a href="" className="section__phone">
+              <div className="col-lg-6">
+                <div className="c-section__contact">
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="tel:+358505011677"
+                    className="c-section__phone"
+                  >
                     +358 505 011 677
                   </a>
-                  <a href="" className="section__email">
+                  <a
+                    href="mailto:xxx"
+                    class="c-section__email"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="c-section__email"
+                  >
+                    <img className="c-section__icon" src={iconEmail} alt="" />
                     XXXX@polarfor.fi
                   </a>
+                </div>
+                <div className="c-section__images">
+                  <img src={photo} alt="" />
                 </div>
               </div>
             </div>

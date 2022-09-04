@@ -15,9 +15,7 @@
   &__inner {
     display: flex;
     align-items: center;
-    z-index: 1;
-    position: relative;
-    height: $height;
+    justify-content: space-between;
     margin-top: 74px;
   }
 
@@ -25,7 +23,6 @@
     display: flex;
     align-items: center;
     margin-right: auto;
-    flex: none;
 
     a {
       display: inline-flex;
@@ -40,15 +37,8 @@
 
   &__navigation {
     display: flex;
-    align-items: center;
-    margin-left: 40px;
-    white-space: nowrap;
-  }
-
-  &__actions {
-    display: flex;
-    align-items: center;
-    margin-left: 18px;
+    justify-content: space-between;
+    margin-right: 19px;
   }
 
   &__language-select {
@@ -70,13 +60,13 @@
 
   &__link {
     @include typo-body-14;
-    display: flex;
-    align-items: center;
     height: $height;
-    margin-right: 66px;
     text-decoration: none;
     color: $color-black;
     @include animate-transition(color);
+    display: flex;
+    align-items: center;
+    padding: 0 31px;
 
     &:hover,
     &.is-active {
@@ -85,18 +75,17 @@
   }
 
   &__link-lang {
-    height: 17px;
+    padding: 0 8px;
     display: flex;
     align-items: center;
     @include typo-body-14;
-    color: $color-grey;
-    padding: 0 6px;
-    border-right: 2px solid;
+    color: $color-dark-grey;
     text-decoration: none;
     @include animate-transition(color);
-
-    &:hover,
-    &.is-active {
+    &--active {
+      color: $color-blue;
+    }
+    &:hover {
       color: $color-blue;
     }
   }
