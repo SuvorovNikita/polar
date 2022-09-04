@@ -1,0 +1,43 @@
+// Fonts
+
+$font-family-body: "Inter", sans-serif;
+
+//Colors
+$color-grey: #c4d3e1;
+$color-dark-grey: #626a87;
+$color-white: #fff;
+$color-blue: #0068f3;
+$color-black: #000;
+
+// Animations
+
+$animation-breakpoint: md !default;
+$animation-duration: 0.2s !default;
+$animation-function: ease !default;
+$transition-breakpoint: md !default;
+$transition-duration: 0.2s !default;
+$transition-function: ease !default;
+
+// Grid Config
+
+$grid-gutter: 15px;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 568px,
+  md: 768px,
+  lg: 1124px,
+  xl: 1280px,
+);
+
+$container-max-widths: (
+  sm: 522px,
+  md: 708px,
+  lg: 944px,
+  xl: 1120px,
+);
+$container-max-widths-sm: (
+  sm: 522px,
+  md: 708px,
+  lg: 944px,
+  xl: 970px,
+);

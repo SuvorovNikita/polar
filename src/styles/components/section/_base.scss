@@ -1,0 +1,13 @@
+@import "../../mixins/index";
+@import "../../variables/index";
+
+&--base {
+  margin-top: 90px;
+
+  @include media-up(md) {
+    margin: 150px 0;
+  }
+
+  #{$root} {
+  }
+}
