@@ -4,11 +4,14 @@
 &--base {
   margin-top: 16px;
 
-  @include media-up(md) {
-    margin: 150px 0;
-  }
-
   #{$root} {
+    &__inner {
+      @include media-down(md) {
+        margin: 0;
+      }
+      margin-top: 150px;
+    }
+
     &__title {
       @include typo-body-h1;
       color: $color-main;
@@ -26,13 +29,15 @@
       padding-right: 10px;
 
       @include media-down(md) {
-        text-align: center;
+        text-align: left;
         @include typo-mobile-h2;
         font-weight: 400;
         width: 256px;
         height: 259px;
         margin: 0 auto;
         margin-top: 32px;
+        margin-left: 32px;
+        margin-bottom: 32px;
       }
     }
 

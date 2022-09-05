@@ -35,9 +35,17 @@
   display: flex;
   flex-flow: row wrap;
 
-  @include media-down(md) {
+  @include media-down(lg) {
     flex-direction: column-reverse;
   }
+}
+
+.row-alt {
+  $root: &;
+  margin-left: -#{$grid-gutter};
+  margin-right: -#{$grid-gutter};
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .row-no-wrap {
