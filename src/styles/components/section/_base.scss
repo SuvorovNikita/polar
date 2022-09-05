@@ -56,6 +56,7 @@
       text-decoration: none;
       color: $color-main;
       @include typo-body-h2;
+      @include animate-transition(color);
       margin-right: 42px;
       &:hover {
         color: $color-blue;

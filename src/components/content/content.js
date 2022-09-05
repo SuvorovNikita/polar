@@ -36,7 +36,6 @@ const Content = () => {
                   </a>
                   <a
                     href="mailto:xxx"
-                    class="c-section__email"
                     target="_blank"
                     rel="noreferrer noopener"
                     className="c-section__email"
