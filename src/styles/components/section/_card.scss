@@ -51,6 +51,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       border: 1px solid #c4d3e1;
+
       @include media-down(md) {
         flex-direction: column;
       }
@@ -133,6 +134,10 @@
       overflow: hidden;
       user-select: none;
       pointer-events: none;
+
+      @include media-down(md) {
+        border-right: 0;
+      }
     }
 
     &__item:nth-child(8) {

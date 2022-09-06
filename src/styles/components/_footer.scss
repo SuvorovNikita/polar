@@ -1,6 +1,10 @@
 .c-footer {
   &__logo {
     margin-top: 110px;
+
+    @include media-down(lg) {
+      display: none;
+    }
   }
 
   &__title {
@@ -8,11 +12,49 @@
     font-weight: 700;
     color: $color-black;
     margin-top: 50px;
+
+    @include media-down(lg) {
+      margin-left: 32px;
+    }
   }
 
   &__adress {
     @include typo-body-16;
     color: $color-dark-grey;
     margin: 12px 0 108px;
+    width: 100%;
+    max-width: 283px;
+
+    @include media-down(lg) {
+      margin-left: 32px;
+      margin-bottom: 44px;
+    }
+  }
+
+  &__inner-map {
+    margin-left: -23px;
+    @include media-down(lg) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__map {
+    @include media-down(lg) {
+      margin: 0 auto;
+      max-width: 320px;
+      height: auto;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__mobile-logo {
+    display: none;
+
+    @include media-down(lg) {
+      margin-bottom: 17px;
+      margin-left: 32px;
+      display: block;
+    }
   }
 }

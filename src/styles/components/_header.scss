@@ -75,19 +75,49 @@
     }
   }
 
-  &__link-lang {
-    padding: 0 8px;
+  &__lang {
     display: flex;
     align-items: center;
+    justify-items: center;
+
+    &:after {
+      width: 2px;
+      height: 18px;
+      background: $color-dark-grey;
+      opacity: 0.6;
+      content: "";
+      display: block;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__link-lang {
+    padding: 0 7px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     @include typo-body-14;
     color: $color-dark-grey;
     text-decoration: none;
     @include animate-transition(color);
+
     &--active {
       color: $color-blue;
     }
+
     &:hover {
       color: $color-blue;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
     }
   }
 }
