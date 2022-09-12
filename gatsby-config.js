@@ -1,4 +1,4 @@
 module.exports = {
-  pathPrefix: "/polar",
+  pathPrefix: "**",
   plugins: [`gatsby-plugin-sass`],
 }

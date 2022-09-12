@@ -1,8 +1,5 @@
 .c-section {
   $root: &;
 
-  @import "base";
-  @import "geography";
-  @import "card";
-  @import "price";
+  @import "hero";
 }

@@ -2,64 +2,32 @@
 
 @mixin typo-body-h1 {
   font-family: $font-family-body;
+  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
-  font-feature-settings: "ss01" on;
 }
 
-@mixin typo-body-h2 {
+@mixin typo-header {
   font-family: $font-family-body;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@mixin typo-text {
+  font-family: $font-family-body;
+  font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  font-feature-settings: "ss01" on;
-}
-
-@mixin typo-body-14 {
-  font-family: $font-family-body;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-feature-settings: "ss01" on;
-}
-
-@mixin typo-body-16 {
-  font-family: $font-family-body;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  font-feature-settings: "ss01" on;
-}
-
-@mixin typo-body-20 {
-  font-family: $font-family-body;
-  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  font-feature-settings: "ss01" on;
 }
 
-@mixin typo-body-24 {
+@mixin typo-button {
   font-family: $font-family-body;
+  font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  font-feature-settings: "ss01" on;
-}
-
-@mixin typo-mobile-h1 {
-  font-family: $font-family-body;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  font-feature-settings: "ss01" on;
-}
-
-@mixin typo-mobile-h2 {
-  font-family: $font-family-body;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  font-feature-settings: "ss01" on;
+  font-size: 13px;
+  line-height: 16px;
 }

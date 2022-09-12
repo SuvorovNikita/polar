@@ -1,15 +1,16 @@
 // Fonts
 
-$font-family-body: "Inter", sans-serif;
+$font-family-body: "Lato", sans-serif;
 
 //Colors
-$color-grey: #c4d3e1;
-$color-dark-grey: #626a87;
+$color-header: rgba(16, 16, 29, 0.9);
+$color-blue: #43abf0;
+$color-blue-h1: #3e9cdc;
+$color-border: #286690;
+$color-form: #272733;
+$color-grey: #bbbbbb;
+$color-button: #2a2b30;
 $color-white: #fff;
-$color-blue: #0068f3;
-$color-black: #000;
-$color-black: #000;
-$color-main: #111927;
 
 // Animations
 
@@ -35,7 +36,7 @@ $container-max-widths: (
   sm: 522px,
   md: 708px,
   lg: 944px,
-  xl: 1150px,
+  xl: 1197px,
 );
 $container-max-widths-sm: (
   sm: 522px,
